@@ -16,7 +16,7 @@ pipeline {
         }
         stage('deploy to production') {
             steps {
-                sh 'npm start app.js'
+                sh 'pm2 start app.js'
             }
         }
     }
